@@ -8,6 +8,9 @@ Hosts-Helper是一个方便、简单的android手机hosts管理工具。
 * 编辑、注释、删除单条host记录；
 * 批量注释，删除多条host记录。
 
+## APK download link
+
+
 ## Coming soon
 
 * hosts 分组管理，文件导入。
