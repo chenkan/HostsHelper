@@ -1,0 +1,50 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    <!--新增  -->
+    <style name="activityTitlebar" parent="android:Theme">
+         <item name="android:windowTitleSize">48dp</item>
+         <item name="android:windowTitleBackgroundStyle">@style/StatusBarBackground</item> 
+         <item name="android:windowBackground">@color/custom_theme_color</item>
+    </style>
+    
+    <style name="StatusBarBackground">  
+        <item name="android:background">@drawable/title_bg</item>  
+    </style>
+     
+    <color name="custom_theme_color">#ffffff</color>
+    
+   <!--  <style name="XTheme" parent="android:Theme">      
+          
+        Window attributes  
+        <item name="android:windowTitleStyle">@style/XWindowTitle</item>     
+        <item name="android:windowTitleBackgroundStyle">@style/StatusBarBackground</item>       
+        <item name="android:windowContentOverlay">@null</item>  
+    </style>   -->  
+    
+    <!-- <style name="StatusBarBackground">  
+        <item name="android:background">@drawable/shape</item>  
+    </style>  --> 
+              
+    <!-- <style name="XWindowTitle" parent="android:WindowTitle">  
+        <item name="android:shadowColor">#BB000000</item>  
+        <item name="android:shadowRadius">0</item>  
+    </style>   --> 
+
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HostsHelper</string>
+    <string name="menu_comment">Comment</string>
+    <string name="menu_delete">Delete</string>
+    <string name="menu_add">Add</string>
+    <string name="but_save">Save</string>
+    <string name="but_cancel">Cancel</string>
+</resources>
