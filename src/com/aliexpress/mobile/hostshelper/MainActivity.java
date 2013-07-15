@@ -277,11 +277,21 @@ public class MainActivity extends Activity {
 
         @Override
         public View getView(final int position, View convertView, ViewGroup parent) {
-            Viewholder holder = new Viewholder();
+            Viewholder holder;// = new Viewholder();
 
-            convertView = MainActivity.this.getLayoutInflater().inflate(R.layout.hosts_item, null);
-            holder.hostStr = (TextView) convertView.findViewById(R.id.text);
-            holder.checkBox = (CheckBox) convertView.findViewById(R.id.checkbox);
+            if (convertView == null) {
+                convertView = MainActivity.this.getLayoutInflater().inflate(R.layout.hosts_item, null);
+                holder = new Viewholder();
+                holder.hostStr = (TextView) convertView.findViewById(R.id.text);
+                holder.checkBox = (CheckBox) convertView.findViewById(R.id.checkbox);
+                convertView.setTag(holder);
+            } else {
+                holder = (Viewholder) convertView.getTag();
+            }
+
+            // convertView = MainActivity.this.getLayoutInflater().inflate(R.layout.hosts_item, null);
+            // holder.hostStr = (TextView) convertView.findViewById(R.id.text);
+            // holder.checkBox = (CheckBox) convertView.findViewById(R.id.checkbox);
 
             holder.checkBox.setOnClickListener(new OnClickListener() {
 
